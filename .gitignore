@@ -1,6 +1,10 @@
 __pycache__/
 .venv/
 
-dataset/*/
+/dataset/
+!/dataset/.gitkeep
+!/dataset/dataset_info.txt
+
 /models/
+!/models/.gitkeep
 image_dump/*/
