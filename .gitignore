@@ -1,10 +1,18 @@
 __pycache__/
 .venv/
 
-/dataset/
+# Ignore all dataset subdirectories and files but keep .txt, .md files and .gitkeep
+/dataset/*
 !/dataset/.gitkeep
+!/dataset/*.txt
+!/dataset/*.md
 !/dataset/dataset_info.txt
 
-/models/
+# Ignore all model files except .txt, .md files and .gitkeep (root models/ only, not App/models/)
+/models/*
 !/models/.gitkeep
+!/models/*.txt
+!/models/*.md
+
+# Ignore all files in image_dump subdirectories
 image_dump/*/
